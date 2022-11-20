@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif, Arial, Helvetica;
+  font-family: 'Nunito', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: rgba( 255, 255, 255, 0.7 );
+}
+
+a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.logo {
+  margin-left: 20px;
+  width: 100px;
+  cursor: pointer;
+}
+
+.sobre {
+  width: 80%;
+  font-size: 18px;
+  text-align: justify;
+}
+
+.header {
+  padding-top: 30px;
+  padding-bottom: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  transition: 0.5s ease-in-out;
+}
+
+.fixed {
+  padding: 25px 0;
+  padding-left: 10px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 9999;
+  transition:  0.32s ease-in-out;
+}
+
+.scrolled {
+  padding: 5px 0;
+  padding-left: 10px;
+  background-color: #121212;
+}
+
+.meuPortfolio {
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  padding: 8px 10px;
+  background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  font-size: 20px;
+  margin-bottom: 16px;
+  display: inline-block;
+}
+
+.navBar {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 20px;
+}
+
+
+.social-icon a {
+  width: 60px;
+  height: 60px;
+  background: rgba(217, 217, 217, 0.1);
+  display: inline-flex;
+  border-radius: 50%;
+  margin-right: 6px;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+.social-icon a::before {
+  content: "";
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  background-color: #ffffff;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 0.3s ease-in-out;
+}
+.social-icon a:hover::before {
+  transform: scale(1);
+}
+.social-icon a img {
+  width: 60%;
+  z-index: 1;
+  transition: 0.3s ease-in-out;
+}
+.social-icon a:hover img {
+  filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
+}
+
+.list-header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+  font-size: 30px;
+  cursor: pointer;
+  width: 50%;
+  color: rgba( 255, 255, 255, 0.7 );
+}
+
+.infoPerfil {
+  margin-top: 180px;
+  margin-left: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nome {
+  font-size: 30px;
+}
+
+.fundo {
+  background-image: url('../imgs/backgroud.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.imagemPerfil {
+  width: 45%;
+}
+
+.contatos {
+  display: flex;
+}
+
+.contatos h3 {
+  border: 1px solid white;
+  padding: 10px;
+}
+
+@media (max-width: 1200px) { 
+  .nome {
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .infoPerfil {
+    flex-direction: column;
+  }
+  .imagemPerfil {
+    width: 30%;
+  }
+}
+
+@media (max-width: 850px) { 
+  .nome {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+  .infoPerfil {
+    flex-direction: column;
+  }
+  .imagemPerfil {
+    width: 70%;
+  }
+}
+
+@media (max-width: 650px) { 
+  .social-icon a {
+    width: 30px;
+    height: 30px;
+  }
+  .nome {
+    font-size: 15px;
+ 
+  }
+
+  .list-header {
+    font-size: 12px;
+  }
+  .marginTop {
+    font-size: 15px;
+  }
+  .infoPerfil {
+    flex-direction: column;
+  }
+  .imagemPerfil {
+    width: 50%;
+  }
+}
+
+@media (max-width: 420px) { 
+  .nome {
+    font-size: 15px;
+ 
+  }
+  .imagemPerfil {
+    width: 100%;
+  }
+}
