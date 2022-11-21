@@ -34,7 +34,7 @@ function Habilidades() {
     <div>
       <section id="habilidades">
           <div class="habilidades-pd">
-            <h2 class="project">Tecnologias</h2>
+            <h1 class="project">Tecnologias</h1>
             <div class="skills-descricao">
               <div class="conteiner-skills">
                 <div class="skill-box">
