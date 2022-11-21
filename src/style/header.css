@@ -167,7 +167,7 @@ a:hover {
     flex-direction: column;
   }
   .imagemPerfil {
-    width: 30%;
+    width: 80%;
   }
 }
 
@@ -184,7 +184,7 @@ a:hover {
     flex-direction: column;
   }
   .imagemPerfil {
-    width: 70%;
+    width: 100%;
   }
 }
 
@@ -208,16 +208,16 @@ a:hover {
     flex-direction: column;
   }
   .imagemPerfil {
-    width: 50%;
+    width: 100%;
   }
 }
 
 @media (max-width: 420px) { 
   .nome {
-    font-size: 15px;
+    font-size: 12px;
  
   }
   .imagemPerfil {
-    width: 100%;
+    width: 50%;
   }
 }
